@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageviewbackgroundbanner"
+        android:scaleType="fitXY"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_background_banner"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageviewbackgroundbanner"
+        android:id="@+id/relative1"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:id="@+id/imageviewbanner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textviewtitlebannerbaihat"
+            android:text="Lo yeu roi"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/imageviewbanner"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewtitlebannerbaihat"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:layout_marginTop="9dp"
+            >
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:text="Chao anh em toi den roi day"
+                android:textColor="#ffff"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

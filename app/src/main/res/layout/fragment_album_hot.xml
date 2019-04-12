@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:padding="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative1album">
+
+    <TextView
+        android:id="@+id/textalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DÀNH CHO BẠN > "
+        android:textColor="#3e3b3d"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textviewxemthemalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Xem Thêm"
+        android:layout_alignParentRight="true"
+        android:textColor="#913677"
+        />
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleviewalbum"
+        android:layout_below="@+id/relative1album"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
